@@ -25,7 +25,14 @@ Credentials are read from the environment (from the Kraken
 export KRAKEN_API_KEY=...      # API key
 export KRAKEN_API_SECRET=...   # base64-encoded private key
 export KRAKEN_BASE_URL=...     # optional: override the REST base URL
-export KRAKEN_PROXY=...        # optional: http/https/socks5 proxy
+```
+
+To route traffic through a proxy, use the standard proxy environment variables
+(`HTTPS_PROXY`, `HTTP_PROXY`, `NO_PROXY`; lowercase variants are also honoured),
+which the HTTP transport reads automatically:
+
+```bash
+export HTTPS_PROXY=http://user:pass@host:port   # http/https/socks5 supported
 ```
 
 ## Output

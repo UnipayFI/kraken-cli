@@ -7,12 +7,13 @@ import (
 )
 
 // Client wraps the go-kraken REST client construction, applying credentials and
-// optional base URL / proxy from the process config.
+// an optional base URL override from the process config. Proxying follows the
+// standard HTTPS_PROXY / HTTP_PROXY / NO_PROXY environment variables, which the
+// underlying transport honours automatically.
 type Client struct {
 	APIKey    string
 	APISecret string
 	BaseURL   string
-	Proxy     string
 }
 
 func NewClient(apiKey, apiSecret string) *Client {
@@ -20,7 +21,6 @@ func NewClient(apiKey, apiSecret string) *Client {
 		APIKey:    apiKey,
 		APISecret: apiSecret,
 		BaseURL:   config.Config.BaseURL,
-		Proxy:     config.Config.Proxy,
 	}
 }
 
@@ -28,9 +28,6 @@ func (c *Client) options() []client.Options {
 	opts := []client.Options{client.WithAuth(c.APIKey, c.APISecret)}
 	if c.BaseURL != "" {
 		opts = append(opts, client.WithBaseURL(c.BaseURL))
-	}
-	if c.Proxy != "" {
-		opts = append(opts, client.WithProxy(c.Proxy))
 	}
 	return opts
 }
