@@ -1,10 +1,8 @@
-github.com/UnipayFI/go-kraken v0.20260622.2 h1:fAZFoF5y+e7lZ3IaL8SMDlBeObs3uWMIWhpT5LakZFQ=
-github.com/UnipayFI/go-kraken v0.20260622.2/go.mod h1:4f5YbAqEqUsdggVoj5xchM5pxOabuOii9yG4zTUHOJU=
+github.com/UnipayFI/go-kraken v0.20261027.1 h1:DaKUIFaGF40nXBZowWWxAOsVD461ilYcWfEjOpltWtg=
+github.com/UnipayFI/go-kraken v0.20261027.1/go.mod h1:NsSJmxSwzO4hKydW3Aw5xPta3lZZ4wCAe0ZDtBt90ng=
 github.com/cpuguy83/go-md2man/v2 v2.0.6/go.mod h1:oOW0eioCTA6cOiMLiUPZOpcVxMig6NIQQ7OS05n1F4g=
 github.com/fatih/color v1.15.0 h1:kOqh6YHBtK8aywxGerMG2Eq3H6Qgoqeo13Bk2Mv/nBs=
 github.com/fatih/color v1.15.0/go.mod h1:0h5ZqXfHYED7Bhv2ZJamyIOUej9KtShiJESRwBDUSsw=
-github.com/go-json-experiment/json v0.0.0-20260504200034-64a0a05799db h1:EWTZKWQtY8ZehowJ8hV1E0GJEBiL2a0eJ7Zd/CU448w=
-github.com/go-json-experiment/json v0.0.0-20260504200034-64a0a05799db/go.mod h1:tphK2c80bpPhMOI4v6bIc2xWywPfbqi1Z06+RcrMkDg=
 github.com/go-resty/resty/v2 v2.17.0 h1:pW9DeXcaL4Rrym4EZ8v7L19zZiIlWPg5YXAcVmt+gN0=
 github.com/go-resty/resty/v2 v2.17.0/go.mod h1:kCKZ3wWmwJaNc7S29BRtUhJwy7iqmn+2mLtQrOyQlVA=
 github.com/gorilla/websocket v1.5.3 h1:saDtZ6Pbx/0u+bgYQ3q96pZgCzfhKXGPqt7kZ72aNNg=
